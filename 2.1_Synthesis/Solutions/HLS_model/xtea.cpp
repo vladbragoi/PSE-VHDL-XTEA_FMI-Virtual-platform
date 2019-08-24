@@ -1,11 +1,11 @@
-void xtea(uint32_t word0, uint32_t word1, uint32_t key0,
-          uint32_t key1, uint32_t key2, uint32_t key3,
+void xtea(long int word0, long int word1, long int key0,
+          long int key1, long int key2, long int key3,
           bool mode,
-          uint32_t *result0, uint32_t *result1)
+          long int *result0, long int *result1)
 {
 
-    uint64_t sum;
-    uint32_t i, delta, v0, v1, temp;
+    long int sum;
+    long int i, delta, v0, v1, temp;
     v0 = word0;
     v1 = word1;
     sum = 0;

@@ -31,8 +31,8 @@ end xtea;
 
 architecture xtea_arc of xtea is
 
-        type state         is (RESET, ST_READ, ST_M0, ST_M1, ST_K, ST_CALC, ST_SUM, ST_WRITE);
-    	subtype int        is integer range 0 to 65;
+    type state         is (RESET, ST_READ, ST_M0, ST_M1, ST_K, ST_CALC, ST_SUM, ST_WRITE);
+    subtype int        is integer range 0 to 65;
 	signal STATUS      : state;
 	signal NEXT_STATUS : state;
 	signal k           : unsigned (1 downto 0);
