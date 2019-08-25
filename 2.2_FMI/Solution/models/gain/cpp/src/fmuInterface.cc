@@ -181,7 +181,7 @@ fmi2Status fmi2DoStep( fmi2Component c, fmi2Real currentCommunicationPoint, fmi2
     else
         comp->result = 0;
 
-    comp->result_rdy = 1;
+    comp->result_rdy = fmi2True;
 
     //------------------------//------------------------
     //------------------------//------------------------
